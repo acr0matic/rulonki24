@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+// 1. Импорт библиотек
+@import "vendors/normalize";
+@import "vendors/family";
+@import "vendors/breakpoint";
+
+// 2. Подключение базовых функций и переменных
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/placeholders',
+  'abstracts/mixins';
+  
+// 3. Подключение базовых стилей
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Подключение стилей разметки
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Подключение стилей компонентов
+@import
+  'components/button';
+
