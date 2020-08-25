@@ -11,7 +11,7 @@
   'abstracts/functions',
   'abstracts/placeholders',
   'abstracts/mixins';
-  
+
 // 3. Подключение базовых стилей
 @import
   'base/base',
@@ -22,6 +22,7 @@
 // 4. Подключение стилей разметки
 @import
   'layout/header',
+  'layout/hero',
   'layout/footer';
 
 // 5. Подключение стилей компонентов
