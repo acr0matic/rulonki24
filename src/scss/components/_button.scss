@@ -1,3 +1,29 @@
 // -----------------------------------------------------------------------------
 // В этом файле стили для компонента "кнопка"
 // -----------------------------------------------------------------------------
+
+.button {
+  display: block;
+
+  width: 100%;
+  min-width: 220px;
+  height: 45px;
+
+  margin: 0;
+
+  border: 1px solid #59a100;
+  border-radius: 3px;
+  outline: none;
+
+  padding: 0;
+
+  color: #fff;
+  background-color: #83c72e;
+
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #94da3e;
+  }
+}
