@@ -1,3 +1,7 @@
 // -----------------------------------------------------------------------------
 // В этом файле подключаются все шрифты через font-face, если таковые есть
 // -----------------------------------------------------------------------------
+
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Regular');
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Regular', 600);
+@include font-face('Rubik', '../fonts/Rubik/Rubik-Regular', 700);
