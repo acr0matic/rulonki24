@@ -16,7 +16,7 @@
     width: 40%;
 
     padding: {
-      top: 215px;
+      top: 235px;
       bottom: 45px;
     }
   }
@@ -80,6 +80,8 @@
 
   &__description {
     font-size: $font-size-5;
+
+    margin: 25px 0;
   }
 }
 
