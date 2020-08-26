@@ -28,6 +28,7 @@
 
     &--important {
       font-size: $font-size-1;
+      font-weight: $weight-bold;
     }
   }
 
@@ -67,13 +68,13 @@
   text-align: center;
 
   &__title {
-    font-weight: $weight-bold;
+    font-weight: $weight-medium;
     font-size: $font-size-5;
 
     text-transform: uppercase;
 
     &--important {
-      font-weight: $weight-extrabold;
+      font-weight: $weight-bold;
       font-size: $font-size-4;
     }
   }
