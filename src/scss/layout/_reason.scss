@@ -1,0 +1,33 @@
+.reason {
+  @include flex($align: stratch);
+  flex-wrap: wrap;
+
+  &__card {
+    width: calc(100% / 3);
+  }
+}
+
+.reason-card {
+  @include flex($justify: flex-start);
+  flex-direction: column;
+
+  background-color: #f2f2f2;
+
+  padding: 25px 15px 45px;
+
+  text-align: center;
+
+  @include even() {
+    background-color: #e2e2e2;
+  }
+
+  &__icon {
+    width: 78px;
+
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $text-black;
+  }
+}
