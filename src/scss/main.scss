@@ -4,6 +4,7 @@
 @import "vendors/normalize";
 @import "vendors/family";
 @import "vendors/breakpoint";
+@import "vendors/swiper";
 
 // 2. Подключение базовых функций и переменных
 @import
@@ -24,6 +25,7 @@
   'layout/header',
   'layout/hero',
   'layout/reason',
+  'layout/fitting',
   'layout/footer';
 
 // 5. Подключение стилей компонентов
