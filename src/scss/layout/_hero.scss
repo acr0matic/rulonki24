@@ -1,11 +1,11 @@
 #hero {
-  background-image: url('../img/bg-main.jpg');
+  background-image: url("../img/bg-main.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .hero {
-  @include flex($align: stratch);
+  @include flex($align: stretch);
 
   &__content {
     width: 60%;
@@ -14,11 +14,6 @@
 
   &__form {
     width: 40%;
-
-    padding: {
-      top: 235px;
-      bottom: 45px;
-    }
   }
 }
 
@@ -58,6 +53,9 @@
 }
 
 .hero-form {
+  @include flex();
+  flex-direction: column;
+
   background: rgba(255, 255, 255, 0.8);
 
   padding: {
@@ -66,6 +64,10 @@
   }
 
   text-align: center;
+
+  &__wrapper {
+    margin: auto 0;
+  }
 
   &__title {
     font-weight: $weight-medium;
