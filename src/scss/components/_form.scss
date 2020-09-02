@@ -1,16 +1,27 @@
 .form {
+  width: 100%;
+
   &__wrapper {
     @include flex();
+  }
+}
+
+.form-primary {
+  &__wrapper {
     flex-direction: column;
   }
 
   &__input {
     margin-bottom: 10px;
   }
-}
 
-.form-primary {
   &__button {
     margin: 15px 0;
+  }
+}
+
+.form-secondary {
+  &__input {
+    margin-right: 20px;
   }
 }
