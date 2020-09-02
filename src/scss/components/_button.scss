@@ -7,23 +7,34 @@
 
   width: 100%;
   min-width: 220px;
-  height: 45px;
+  min-height: 45px;
 
   margin: 0;
 
-  border: 1px solid #59a100;
-  border-radius: 3px;
+  border-radius: 5px;
   outline: none;
 
   padding: 0;
 
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.button-primary {
   color: #fff;
   background-color: #83c72e;
-
-  transition: background-color 0.15s ease;
-  cursor: pointer;
+  border: 1px solid #59a100;
 
   &:hover {
     background-color: #94da3e;
   }
+}
+
+.button-clear {
+  background-color: transparent;
+  border: none;
+
+  color: $text-black;
+  font-weight: $weight-medium;
+  text-decoration: underline;
 }

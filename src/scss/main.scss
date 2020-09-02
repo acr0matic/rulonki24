@@ -20,7 +20,13 @@
   'base/typography',
   'base/helpers';
 
-// 4. Подключение стилей разметки
+// 4. Подключение стилей компонентов
+@import
+  'components/button',
+  'components/input',
+  'components/form';
+
+// 5. Подключение стилей разметки
 @import
   'layout/header',
   'layout/hero',
@@ -30,9 +36,4 @@
   'layout/manufacturing',
   'layout/footer';
 
-// 5. Подключение стилей компонентов
-@import
-  'components/button',
-  'components/input',
-  'components/form';
 

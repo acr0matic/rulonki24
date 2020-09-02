@@ -35,4 +35,12 @@
   &__description {
 
   }
+
+  &__info {
+    margin-top: 15px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
