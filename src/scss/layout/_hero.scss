@@ -112,5 +112,15 @@
         }
       }
     }
+
+    &--specialist {
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: url("../img/icons/2-#{$i}.png");
+          }
+        }
+      }
+    }
   }
 }

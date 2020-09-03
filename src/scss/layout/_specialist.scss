@@ -1,0 +1,21 @@
+#specialist {
+  background-image: url("../img/bg-specialist.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.specialist {
+  &__content {
+    padding: 70px 0;
+
+    margin-top: 0;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+    margin-top: 0;
+  }
+}
