@@ -84,7 +84,7 @@
           <!-- /.callback__time -->
 
           <div class="callback__action">
-            <button class="button button-primary">Заказать звонок</button>
+            <button data-micromodal-trigger="modal-callback" class="button button-primary">Заказать звонок</button>
           </div>
           <!-- /.callback__action -->
         </div>
@@ -423,7 +423,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -478,7 +478,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -533,7 +533,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -588,7 +588,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -643,7 +643,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -698,7 +698,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -753,7 +753,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -808,7 +808,7 @@
                     </div>
                     <!-- /.fitting-item__gallery -->
                     <div class="fitting-item__action">
-                      <button class="button button-primary">Сделать заказ</button>
+                      <button data-micromodal-trigger="modal-callback" class="button button-primary">Сделать заказ</button>
                     </div>
                     <!-- /.fitting-item__action -->
                   </div>
@@ -951,6 +951,31 @@
           <a data-fslightbox="modal-fake" href="img/fake/2.jpg">
             <img class="modal-content__image" src="img/fake/2.jpg" alt="">
           </a>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-callback micromodal-slide" id="modal-callback" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container modal-callback__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Обратный звонок
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content">
+          <form action="" class="form form-primary">
+            <div class="form__wrapper form-primary__wrapper">
+              <p class="form-description form-primary__description">Укажите Ваше имя и номер телефона и мы перезвоним в ближайшее время!</p>
+              <input type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
+              <input type="tel" class="form__input input input-text form-primary__input"
+                placeholder="+7 (999) 555-55-55">
+              <button class="button form-primary__button button-primary">Заказать звонок</button>
+            </div>
+            <!-- /.form__wrapper -->
+          </form>
         </main>
       </div>
     </div>
