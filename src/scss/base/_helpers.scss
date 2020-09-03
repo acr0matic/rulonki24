@@ -7,6 +7,10 @@
   max-width: $container-max-width;
   margin-left: auto;
   margin-right: auto;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    padding: 0 10px;
+  }
 }
 
 .section-title {
