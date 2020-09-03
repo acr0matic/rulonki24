@@ -1,4 +1,4 @@
-/* global Swiper */
+/* global Swiper, MicroModal */
 
 const swiperFull = new Swiper('.fitting__full', {
   spaceBetween: 10,
@@ -22,3 +22,7 @@ const swiperThumbs = new Swiper('.fitting__thumbs', {
 
 swiperFull.controller.control = swiperThumbs;
 swiperThumbs.controller.control = swiperFull;
+
+MicroModal.init({
+  awaitCloseAnimation: true,
+});

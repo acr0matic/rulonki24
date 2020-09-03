@@ -1,0 +1,13 @@
+.modal-fake {
+  &__container {
+    max-width: 550px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__image {
+    margin-bottom: 15px;
+  }
+}
