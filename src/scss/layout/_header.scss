@@ -6,6 +6,10 @@
   @include flex();
 
   padding: 25px 0;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    flex-direction: column;
+  }
 }
 
 .logo {
@@ -20,18 +24,22 @@
 
   &__image {
     &--main {
-      width: 150px;
+      max-width: 150px;
       margin-right: 15px;
     }
 
     &--primary {
-      width: 165px;
+      max-width: 165px;
       margin-left: 15px;
     }
   }
 
   &__text {
     @include flex();
+
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
 
     &::after {
       content: "";
@@ -49,8 +57,18 @@
 .callback {
   @include flex();
 
+  @include breakpoint($breakpoint-mobile-large) {
+    flex-direction: column;
+
+    margin-top: 15px;
+  }
+
   &__phone {
     margin-right: 15px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-right: 0;
+    }
   }
 
   &__tel {
@@ -60,11 +78,18 @@
 
   &__time {
     margin-right: 15px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-right: 0;
+    }
   }
 
   &__hours {
   }
 
   &__action {
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
   }
 }
