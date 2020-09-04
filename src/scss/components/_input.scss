@@ -16,4 +16,9 @@
     border: 1px solid #83c72e;
     border-radius: 5px;
   }
+
+  &--error {
+    background-color: #ffdfdf;
+    border: 1px solid #ffb6b6;
+  }
 }

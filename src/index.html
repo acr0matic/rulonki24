@@ -163,18 +163,18 @@
                 Укажите имя и контактные данные — наш специалист перезвонит вам максимально быстро
               </p>
 
-              <form action="" class="form form-primary">
+              <form id="hero-form" action="php/mailer.php" class="form form-primary">
                 <div class="form__wrapper form-primary__wrapper">
-                  <input type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
-                  <input type="tel" class="form__input input input-text form-primary__input" placeholder="+7 (999) 555-55-55">
+                  <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
+                  <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-primary__input" placeholder="+7 (999) 555-55-55">
                   <input type="email" class="form__input input input-text form-primary__input" placeholder=ivan1994@email.ru>
-                  <button class="button form-primary__button button-primary">Рассчитать стоимость</button>
+                  <button type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
                   <div class="form__or">
                     или
                   </div>
                   <!-- /.form__or -->
 
-                  <button class="form-primary__button button button-primary">Сэкономить 25%</button>
+                  <button type="button" class="form-primary__button button button-primary">Сэкономить 25%</button>
                   <div class="form__info">
                     онлайн заказ и самостоятельная установка
                   </div>
@@ -863,12 +863,12 @@
     <section id="callback">
       <div class="container">
         <div class="callback">
-          <form action="" class="callback__form form form-secondary">
+          <form id="section-form" action="php/mailer.php" class="callback__form form form-secondary">
             <div class="form__wrapper form-secondary__wrapper">
-              <input type="text" class="form__input input input-text form-secondary__input" placeholder="Иван">
-              <input type="tel" class="form__input input input-text form-secondary__input" placeholder="+7 (999) 555-55-55">
+              <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-secondary__input" placeholder="Иван">
+              <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-secondary__input" placeholder="+7 (999) 555-55-55">
               <input type="email" class="form__input input input-text form-secondary__input" placeholder=ivan1994@email.ru>
-              <button class="button button-primary form-secondary__button">Рассчитать стоимость</button>
+              <button type="button" class="button button-primary form-secondary__button">Рассчитать стоимость</button>
             </div>
             <!-- /.form__wrapper -->
           </form>
@@ -1006,12 +1006,12 @@
                 Укажите имя и контактные данные — наш специалист перезвонит вам максимально быстро
               </p>
 
-              <form action="" class="form form-primary">
+              <form id="specialist-form" action="php/mailer.php" class="form form-primary">
                 <div class="form__wrapper form-primary__wrapper">
-                  <input type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
-                  <input type="tel" class="form__input input input-text form-primary__input" placeholder="+7 (999) 555-55-55">
+                  <input required data-form="name" type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
+                  <input required data-form="phone" type="tel" class="form__input input input-text form-primary__input" placeholder="+7 (999) 555-55-55">
                   <input type="email" class="form__input input input-text form-primary__input" placeholder=ivan1994@email.ru>
-                  <button class="button form-primary__button button-primary">Рассчитать стоимость</button>
+                  <button type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
                 </div>
                 <!-- /.form__wrapper -->
               </form>
@@ -1068,13 +1068,13 @@
           <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
         </header>
         <main class="modal__content">
-          <form action="" class="form form-primary">
+          <form id="modal-form" action="php/mailer.php" class="form form-primary">
             <div class="form__wrapper form-primary__wrapper">
               <p class="form-description form-primary__description">Укажите Ваше имя и номер телефона и мы перезвоним в
                 ближайшее время!</p>
-              <input type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
-              <input type="tel" class="form__input input input-text form-primary__input" placeholder="+7 (999) 555-55-55">
-              <button class="button form-primary__button button-primary">Заказать звонок</button>
+              <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-primary__input" placeholder="Иван">
+              <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-primary__input" placeholder="+7 (999) 555-55-55">
+              <button type="button" class="button form-primary__button button-primary">Заказать звонок</button>
             </div>
             <!-- /.form__wrapper -->
           </form>
@@ -1091,7 +1091,10 @@
   <script src="scripts/libraries/swiper.js"></script>
   <script src="scripts/libraries/fslightbox.js"></script>
   <script src="scripts/libraries/micromodal.js"></script>
+  <script src="scripts/libraries/imask.js"></script>
+
   <script src="scripts/script.js"></script>
+  <script src="scripts/forms.js"></script>
   <!-- endbuild -->
 
   <!-- Yandex.Metrika counter -->
