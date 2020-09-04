@@ -4,6 +4,10 @@
 
   &__card {
     width: calc(100% / 3);
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+    }
   }
 }
 
@@ -34,6 +38,11 @@
 
   &__description {
 
+    @include breakpoint($breakpoint-mobile-large) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__info {

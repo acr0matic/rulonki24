@@ -19,5 +19,9 @@
     margin: 40px 0;
 
     text-align: center;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3;
+    }
   }
 }
