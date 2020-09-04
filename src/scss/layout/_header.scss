@@ -59,8 +59,6 @@
 
   @include breakpoint($breakpoint-mobile-large) {
     flex-direction: column;
-
-    margin-top: 15px;
   }
 
   &__phone {
