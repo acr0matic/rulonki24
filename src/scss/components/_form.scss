@@ -3,6 +3,10 @@
 
   &__wrapper {
     @include flex();
+
+    @include breakpoint($breakpoint-mobile-large) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -27,5 +31,10 @@
 .form-secondary {
   &__input {
     margin-right: 20px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 }

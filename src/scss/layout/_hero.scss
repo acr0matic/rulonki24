@@ -7,13 +7,27 @@
 .hero {
   @include flex($align: stretch);
 
+  @include breakpoint($breakpoint-mobile-large) {
+    flex-direction: column;
+  }
+
   &__content {
     width: 60%;
     margin-top: 75px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+    }
   }
 
   &__form {
     width: 40%;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      width: 100%;
+
+      padding: 30px 0;
+    }
   }
 }
 
@@ -21,9 +35,26 @@
   &__title {
     font-size: $font-size-2;
 
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3;
+    }
+
+    @include breakpoint($breakpoint-mobile-medium) {
+      font-size: $font-size-4;
+    }
+
     &--important {
       font-size: $font-size-1;
       font-weight: $weight-bold;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        font-size: $font-size-2;
+      }
+
+      @include breakpoint($breakpoint-mobile-medium) {
+        font-size: $font-size-3;
+      }
+
     }
   }
 
@@ -42,6 +73,10 @@
     margin-bottom: 2px;
 
     font-size: $font-size-4;
+
+    @include breakpoint($breakpoint-mobile-medium) {
+      font-size: $font-size-5;
+    }
   }
 
   &__subtitle {
@@ -65,6 +100,16 @@
 
   text-align: center;
 
+  @include breakpoint($breakpoint-mobile-large) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    padding: {
+      right: 20px;
+      left: 20px;
+    }
+  }
+
   &__wrapper {
     margin: auto 0;
   }
@@ -75,9 +120,17 @@
 
     text-transform: uppercase;
 
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-6;
+    }
+
     &--important {
       font-weight: $weight-bold;
       font-size: $font-size-4;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        font-size: $font-size-5;
+      }
     }
   }
 

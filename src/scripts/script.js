@@ -11,13 +11,23 @@ const swiperFull = new Swiper('.fitting__full', {
 
 const swiperThumbs = new Swiper('.fitting__thumbs', {
   spaceBetween: 15,
-  slidesPerView: 8,
+  slidesPerView: 3,
   touchRatio: 0.2,
   slideToClickedSlide: true,
   loop: true,
   loopedSlides: 8,
   slideVisibleClass: 'fitting__swiper-slide',
   slideActiveClass: 'fitting__swiper-slide--active',
+
+  breakpoints: {
+    360: {
+      slidesPerView: 4,
+    },
+
+    475: {
+      slidesPerView: 8,
+    },
+  },
 });
 
 swiperFull.controller.control = swiperThumbs;

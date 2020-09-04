@@ -6,13 +6,22 @@ body {
   font-family: Rubik, sans-serif;
 }
 
-div {
+div,
+p {
   font-size: $font-size-6;
   color: $text-darkgray;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    font-size: $font-size-7;
+  }
 }
 
 span {
   font-size: $font-size-7;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    font-size: $font-size-8;
+  }
 }
 
 h1,
