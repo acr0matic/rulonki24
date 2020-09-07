@@ -86,7 +86,7 @@
   @include flex($justify: flex-start);
 
   &__item {
-    width: 25%;
+    width: 24%;
     transition: all 0.15s ease;
 
     &:not(:last-child) {
@@ -99,6 +99,7 @@
   }
 
   &__image {
+    height: 90px;
     border-radius: 5px;
     object-fit: cover;
   }
