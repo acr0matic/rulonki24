@@ -51,6 +51,26 @@
   <!-- build:css -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- endbuild -->
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(67093783, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/67093783" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -174,7 +194,7 @@
                   </div>
                   <!-- /.form__or -->
 
-                  <button type="button" class="form-primary__button button button-primary">Сэкономить 25%</button>
+                  <button onclick="ym(67093783,'reachGoal','request')" type="button" class="form-primary__button button button-primary">Сэкономить 25%</button>
                   <div class="form__info">
                     онлайн заказ и самостоятельная установка
                   </div>
@@ -835,7 +855,7 @@
               <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-secondary__input" placeholder="Ваше имя">
               <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-secondary__input" placeholder="Ваш телефон">
               <input type="email" class="form__input input input-text form-secondary__input" placeholder="Эл. почта (не обязательно)">
-              <button type="button" class="button button-primary form-secondary__button">Рассчитать стоимость</button>
+              <button onclick="ym(67093783,'reachGoal','request')" type="button" class="button button-primary form-secondary__button">Рассчитать стоимость</button>
             </div>
             <!-- /.form__wrapper -->
           </form>
@@ -978,7 +998,7 @@
                   <input required data-form="name" type="text" class="form__input input input-text form-primary__input" placeholder="Ваше имя">
                   <input required data-form="phone" type="tel" class="form__input input input-text form-primary__input" placeholder="Ваш телефон">
                   <input type="email" class="form__input input input-text form-primary__input" placeholder="Эл. почта (не обязательно)">
-                  <button type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
+                  <button onclick="ym(67093783,'reachGoal','request')" type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
                 </div>
                 <!-- /.form__wrapper -->
               </form>
@@ -1041,7 +1061,7 @@
                 ближайшее время!</p>
               <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-primary__input" placeholder="Ваше имя">
               <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-primary__input" placeholder="Ваш телефон">
-              <button type="button" class="button form-primary__button button-primary">Заказать звонок</button>
+              <button onclick="ym(67093783,'reachGoal','click')" type="button" class="button form-primary__button button-primary">Заказать звонок</button>
             </div>
             <!-- /.form__wrapper -->
           </form>
@@ -1063,10 +1083,6 @@
   <script src="scripts/script.js"></script>
   <script src="scripts/forms.js"></script>
   <!-- endbuild -->
-
-  <!-- Yandex.Metrika counter -->
-
-  <!-- /Yandex.Metrika counter -->
 
 </body>
 
