@@ -1,0 +1,25 @@
+.modal-accept {
+  &__container {
+    max-width: 500px;
+  }
+
+  &__content {
+    @include flex();
+
+    @include breakpoint($breakpoint-mobile-large) {
+      flex-direction: column;
+
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    width: 54px;
+    margin-right: 20px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}

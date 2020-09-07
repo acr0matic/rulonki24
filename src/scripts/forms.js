@@ -52,6 +52,8 @@ function AJAXform(formElement, formMethod = 'post') {
   const formAction = form.getAttribute('action');
   const formInputs = form.querySelectorAll('input');
 
+  const buttonContent = acceptButton.innerHTML;
+
   function XMLhttp() {
     const httpRequest = new XMLHttpRequest();
     const formData = new FormData();
@@ -65,6 +67,8 @@ function AJAXform(formElement, formMethod = 'post') {
     httpRequest.onreadystatechange = function Response() {
       if (this.readyState === 4 && this.status === 200) {
         if (document.getElementById('modal-callback').classList.contains('is-open')) MicroModal.close('modal-callback');
+        MicroModal.show('modal-accept');
+        acceptButton.innerHTML = buttonContent;
 
         formInputs.forEach((inputElement) => {
           const input = inputElement;
@@ -79,7 +83,12 @@ function AJAXform(formElement, formMethod = 'post') {
     httpRequest.send(formData);
   }
 
-  acceptButton.onclick = () => (CheckForm(form) ? XMLhttp() : false);
+  acceptButton.onclick = () => {
+    if (CheckForm(form)) {
+      acceptButton.innerHTML = '<i class="button__loader fa fa-circle-o-notch fa-spin"></i>Отправляем';
+      XMLhttp();
+    }
+  };
 }
 
 window.addEventListener('DOMContentLoaded', () => {

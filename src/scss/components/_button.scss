@@ -20,6 +20,10 @@
 
   transition: all 0.15s ease;
   cursor: pointer;
+
+  &__loader {
+    margin-right: 10px;
+  }
 }
 
 .button-primary {

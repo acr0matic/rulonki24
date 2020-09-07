@@ -48,6 +48,7 @@
   <meta name="yandex-verification" content="" />
 
   <!-- Стили -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- build:css -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- endbuild -->
@@ -148,7 +149,7 @@
 
             <ul class="hero-content__advantages advantages">
               <li class="advantages__item">
-                От <strong> 448 руб.</strong> за метр
+                От <strong> 699 руб.</strong> за метр
               </li>
               <li class="advantages__item">
                 От <strong>5 дней</strong> на изготовление и монтаж
@@ -188,13 +189,13 @@
                   <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-primary__input" placeholder="Ваше имя">
                   <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-primary__input" placeholder="Ваш номер телефона">
                   <input type="email" class="form__input input input-text form-primary__input" placeholder="Эл. почта (не обязательно)">
-                  <button type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
+                  <button onclick="ym(67093783,'reachGoal','request')" type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
                   <div class="form__or">
                     или
                   </div>
                   <!-- /.form__or -->
 
-                  <button onclick="ym(67093783,'reachGoal','request')" type="button" class="form-primary__button button button-primary">Сэкономить 25%</button>
+                  <button data-micromodal-trigger="modal-callback" type="button" class="form-primary__button button button-primary">Сэкономить 25%</button>
                   <div class="form__info">
                     онлайн заказ и самостоятельная установка
                   </div>
@@ -1065,6 +1066,30 @@
             </div>
             <!-- /.form__wrapper -->
           </form>
+        </main>
+      </div>
+      <!-- /.modal__container -->
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="modal modal-accept micromodal-slide" id="modal-accept" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container modal-accept__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h2 class="modal__title">
+            Обратный звонок
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content modal-accept__content">
+          <img class="modal-accept__icon" src="img/icons/accept-icon.svg" alt="">
+          <div class="modal-accept__text">
+            <p class="modal__text">Ваша заявка отправлена, <span class="modal__text modal__text--important">спасибо</span>!</p>
+            <p class="modal__text">В ближайшее время, мы Вам перезвоним.</p>
+          </div>
+          <!-- /.modal-accept__text -->
         </main>
       </div>
       <!-- /.modal__container -->

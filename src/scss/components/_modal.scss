@@ -60,6 +60,14 @@
     padding: 30px;
     overflow-y: auto;
   }
+
+  &__text {
+    font-size: $font-size-6;
+
+    &--important {
+      font-weight: $weight-medium;
+    }
+  }
 }
 
 .modal-content__title {
