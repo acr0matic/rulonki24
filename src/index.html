@@ -69,7 +69,11 @@
     });
   </script>
   <noscript>
-    <div><img src="https://mc.yandex.ru/watch/67093783" style="position:absolute; left:-9999px;" alt="" /></div>
+    <div>
+      <img src="https://mc.yandex.ru/watch/67093783" alt="" style="
+        position: absolute;
+        left: -9999px;" />
+    </div>
   </noscript>
   <!-- /Yandex.Metrika counter -->
 </head>
@@ -94,31 +98,42 @@
         <!-- /.header__logo -->
 
         <div class="callback">
-          <div class="callback__phone">
-            <a class="callback__tel" href="tel:+79266304556">+7 (926) 630-45-56</a>
-          </div>
-          <!-- /.callback__phone -->
-
           <div class="callback__time">
             <span class="callback__hours">с 9 до 22</span>
           </div>
           <!-- /.callback__time -->
 
-          <div class="callback__action">
-            <button data-micromodal-trigger="modal-callback" class="button button-primary">Заказать звонок</button>
+          <div class="callback__phone">
+            <a class="callback__tel" href="tel:+79266304556">+7 (926) 630-45-56</a>
           </div>
-          <!-- /.callback__action -->
+          <!-- /.callback__phone -->
         </div>
         <!-- /.callback -->
       </div>
-      <!-- /.wrapper -->
+      <!-- /.header -->
     </div>
     <!-- /.container -->
   </header>
 
+  <div class="sub-header">
+    <div class="container">
+      <nav class="sub-header__nav nav">
+        <ul class="nav__navbar">
+          <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#reason" class="nav__link">Преимущества</a></li>
+          <li class="nav__item"><a href="#fitting" class="nav__link">Примерочная</a></li>
+          <li class="nav__item"><a href="#manufacturing" class="nav__link">Производство</a></li>
+          <li class="nav__item"><a href="#specialist" class="nav__link">Замерщик</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.sub-header -->
+
   <!-- Основной контент -->
   <main>
-    <section id="hero">
+    <section id="hero" class="section section--nopadding">
       <div class="container">
         <div class="hero">
           <div class="hero__content hero-content">
@@ -938,7 +953,7 @@
       <!-- /.container -->
     </section>
 
-    <section id="specialist">
+    <section id="specialist" class="section section--nopadding">
       <div class="container">
         <div class="hero specialist">
           <div class="hero__content hero-content specialist__content">

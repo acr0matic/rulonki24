@@ -5,13 +5,24 @@
 .header {
   @include flex();
 
-  padding: 25px 0;
+  padding: 5px 0;
 
   @include breakpoint($breakpoint-mobile-large) {
     flex-direction: column;
 
-    padding: 10px 0;
+    padding: 15px 0;
   }
+}
+
+.sub-header {
+  position: sticky;
+  z-index: $z-index-header;
+  top: 0;
+
+  background-color: #fbfbfb;
+  border-bottom: 1px solid rgb(199, 199, 199);
+
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
