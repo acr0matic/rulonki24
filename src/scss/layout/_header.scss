@@ -5,7 +5,7 @@
 .header {
   @include flex();
 
-  padding: 5px 0;
+  padding: 10px 0;
 
   @include breakpoint($breakpoint-mobile-large) {
     flex-direction: column;
@@ -36,31 +36,26 @@
   @include flex();
 
   &__image {
-    &--main {
-      max-width: 150px;
-      margin-right: 15px;
+    max-width: 150px;
 
-      @include breakpoint($breakpoint-mobile-medium) {
-        margin-right: auto;
-        margin-left: auto;
-        width: 90%;
-      }
+    @include breakpoint($breakpoint-mobile-medium) {
+      margin-right: auto;
+      margin-left: auto;
+      width: 90%;
+    }
+
+    &--main {
+      margin-right: 35px;
     }
 
     &--primary {
-      max-width: 165px;
       margin-left: 15px;
-
-      @include breakpoint($breakpoint-mobile-medium) {
-        margin-right: auto;
-        margin-left: auto;
-        width: 90%;
-      }
     }
   }
 
   &__text {
     @include flex();
+    font-size: $font-size-7;
 
     @include breakpoint($breakpoint-mobile-large) {
       display: none;
@@ -70,7 +65,7 @@
       content: "";
 
       width: 1px;
-      height: 65px;
+      height: 50px;
 
       margin-left: 15px;
 
@@ -80,14 +75,11 @@
 }
 
 .callback {
-  @include flex();
-
-  @include breakpoint($breakpoint-mobile-large) {
-    flex-direction: column;
-  }
+  @include flex($align: flex-end);
+  flex-direction: column-reverse;
 
   &__phone {
-    margin-right: 15px;
+    font-weight: $weight-medium;
 
     @include breakpoint($breakpoint-mobile-large) {
       margin-right: 0;
@@ -96,19 +88,15 @@
   }
 
   &__tel {
-    color: $text-black;
-    font-size: $font-size-4;
+    color: $text-darkgray;
+    font-size: $font-size-3;
   }
 
   &__time {
-    margin-right: 15px;
-
-    @include breakpoint($breakpoint-mobile-large) {
-      margin-right: 0;
-    }
   }
 
   &__hours {
+    font-size: $font-size-8;
   }
 
   &__action {
