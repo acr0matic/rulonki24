@@ -2,15 +2,35 @@
 // В этом файле прописываются все стили относящиеся к шапке сайта
 // -----------------------------------------------------------------------------
 
+#header {
+  @include breakpoint($breakpoint-mobile-large) {
+    position: fixed;
+    z-index: $z-index-header;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 5px 0;
+
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .callback {
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
+  }
+}
+
 .header {
   @include flex();
 
   padding: 10px 0;
 
   @include breakpoint($breakpoint-mobile-large) {
-    flex-direction: column;
-
-    padding: 15px 0;
+    justify-content: space-between;
   }
 }
 
@@ -50,6 +70,10 @@
 
     &--primary {
       margin-left: 15px;
+
+      @include breakpoint($breakpoint-mobile-large) {
+        display: none;
+      }
     }
   }
 
@@ -74,22 +98,23 @@
   }
 }
 
+
+
 .callback {
   @include flex($align: flex-end);
   flex-direction: column-reverse;
 
   &__phone {
     font-weight: $weight-medium;
-
-    @include breakpoint($breakpoint-mobile-large) {
-      margin-right: 0;
-      margin-top: 15px;
-    }
   }
 
   &__tel {
     color: $text-darkgray;
     font-size: $font-size-3;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      font-size: $font-size-3 - 3px;
+    }
   }
 
   &__time {

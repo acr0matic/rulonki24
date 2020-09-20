@@ -9,6 +9,8 @@
 
   @include breakpoint($breakpoint-mobile-large) {
     flex-direction: column;
+
+    margin-top: 30px;
   }
 
   &__content {

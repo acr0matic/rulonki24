@@ -1,5 +1,9 @@
 .nav {
   &__navbar {
+    @include breakpoint($breakpoint-mobile-large) {
+      display: none;
+    }
+
     @include flex();
 
     margin: 0;

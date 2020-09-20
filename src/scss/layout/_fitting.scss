@@ -14,10 +14,11 @@
 }
 
 .fitting-item {
-  @include flex($align: stratch);
+  @include flex($align: stretch);
 
   @include breakpoint($breakpoint-mobile-large) {
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   &__picture {
@@ -42,10 +43,11 @@
   }
 
   &__content {
-    @include flex($align: stratch);
+    @include flex($align: stretch);
     flex-direction: column;
 
     width: 45%;
+    height: 530px;
 
     padding-right: 5px;
 

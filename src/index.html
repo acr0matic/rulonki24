@@ -61,7 +61,7 @@
     })
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(67093783, "init", {
+    ym(67502653, "init", {
       clickmap: true,
       trackLinks: true,
       accurateTrackBounce: true,
@@ -70,7 +70,7 @@
   </script>
   <noscript>
     <div>
-      <img src="https://mc.yandex.ru/watch/67093783" alt="" style="
+      <img src="https://mc.yandex.ru/watch/67502653" alt="" style="
         position: absolute;
         left: -9999px;" />
     </div>
@@ -80,7 +80,7 @@
 
 <body>
   <!-- Шапка -->
-  <header>
+  <header id="header">
     <div class="container">
       <div class="header">
         <div class="header__logo logo">
@@ -109,11 +109,45 @@
           <!-- /.callback__phone -->
         </div>
         <!-- /.callback -->
+
+        <a class="phone" href="tel:+79266304556">
+          <img class="phone__icon" src="img/icons/call.svg" alt="">
+        </a>
+
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
       <!-- /.header -->
     </div>
     <!-- /.container -->
   </header>
+
+  <div id="mobile-menu" class="mobile-menu mobile-menu--slide">
+    <ul class="mobile-menu__navbar">
+      <li class="mobile-menu__item"><a href="#hero" class="mobile-menu__link">Главная</a></li>
+      <li class="mobile-menu__item"><a href="#reason" class="mobile-menu__link">Преимущества</a></li>
+      <li class="mobile-menu__item"><a href="#fitting" class="mobile-menu__link">Примерочная</a></li>
+      <li class="mobile-menu__item"><a href="#manufacturing" class="mobile-menu__link">Производство</a></li>
+      <li class="mobile-menu__item"><a href="#specialist" class="mobile-menu__link">Замерщик</a></li>
+    </ul>
+
+    <div class="callback">
+      <div class="callback-action">
+        <button data-micromodal-trigger="modal-callback" class="button button-primary callback-action__label">Обратный звонок</button>
+      </div>
+      <!-- /.callback-action -->
+
+      <div class="callback__info callback-info">
+        <span class="callback-info__time">с 9 до 22</span>
+        <a class="callback-info__phone" href="tel:+74993906764">+7 499 390 67 64</a>
+      </div>
+      <!-- /.callback-info -->
+    </div>
+    <!-- /.callback -->
+  </div>
 
   <div class="sub-header">
     <div class="container">
@@ -204,7 +238,7 @@
                   <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-primary__input" placeholder="Ваше имя">
                   <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-primary__input" placeholder="Ваш номер телефона">
                   <input type="email" class="form__input input input-text form-primary__input" placeholder="Эл. почта (не обязательно)">
-                  <button onclick="ym(67093783,'reachGoal','request')" type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
+                  <button onclick="ym(67502653,'reachGoal','zayavka')" type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
                   <div class="form__or">
                     или
                   </div>
@@ -864,7 +898,7 @@
               <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-secondary__input" placeholder="Ваше имя">
               <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-secondary__input" placeholder="Ваш телефон">
               <input type="email" class="form__input input input-text form-secondary__input" placeholder="Эл. почта (не обязательно)">
-              <button onclick="ym(67093783,'reachGoal','request')" type="button" class="button button-primary form-secondary__button">Рассчитать стоимость</button>
+              <button onclick="ym(67502653,'reachGoal','zayavka')" type="button" class="button button-primary form-secondary__button">Рассчитать стоимость</button>
             </div>
             <!-- /.form__wrapper -->
           </form>
@@ -1007,7 +1041,7 @@
                   <input required data-form="name" type="text" class="form__input input input-text form-primary__input" placeholder="Ваше имя">
                   <input required data-form="phone" type="tel" class="form__input input input-text form-primary__input" placeholder="Ваш телефон">
                   <input type="email" class="form__input input input-text form-primary__input" placeholder="Эл. почта (не обязательно)">
-                  <button onclick="ym(67093783,'reachGoal','request')" type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
+                  <button onclick="ym(67502653,'reachGoal','zayavka')" type="button" class="button form-primary__button button-primary">Рассчитать стоимость</button>
                 </div>
                 <!-- /.form__wrapper -->
               </form>
@@ -1055,7 +1089,7 @@
   <!-- /.modal -->
 
   <div class="modal modal-callback micromodal-slide" id="modal-callback" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__overlay" data-micromodal-close>
       <div class="modal__container modal-callback__container" role="dialog" aria-modal="true">
         <header class="modal__header">
           <h2 class="modal__title">
@@ -1070,7 +1104,7 @@
                 ближайшее время!</p>
               <input required data-form="name" name="user_name" type="text" class="form__input input input-text form-primary__input" placeholder="Ваше имя">
               <input required data-form="phone" name="user_phone" type="tel" class="form__input input input-text form-primary__input" placeholder="Ваш телефон">
-              <button onclick="ym(67093783,'reachGoal','click')" type="button" class="button form-primary__button button-primary">Заказать звонок</button>
+              <button onclick="ym(67502653,'reachGoal','zayavka')" type="button" class="button form-primary__button button-primary">Заказать звонок</button>
             </div>
             <!-- /.form__wrapper -->
           </form>
@@ -1114,6 +1148,7 @@
   <script src="scripts/libraries/imask.js"></script>
 
   <script src="scripts/script.js"></script>
+  <script src="scripts/mobile.js"></script>
   <script src="scripts/smoothscroll.js"></script>
   <script src="scripts/forms.js"></script>
   <!-- endbuild -->
