@@ -1,0 +1,26 @@
+.swiper-button {
+  &-next,
+  &-prev {
+    color: #83c72e;
+
+    outline: none;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+
+  &-next {
+    &::after {
+      content: url('../img/icons/right-arrow.svg');
+    }
+  }
+
+  &-prev {
+    &::after {
+      content: url('../img/icons/left-arrow.svg');
+    }
+  }
+}

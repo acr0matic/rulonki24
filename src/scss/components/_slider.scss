@@ -1,0 +1,30 @@
+.fitting__thumbs {
+  &__slider {
+    position: relative;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      padding: 0 45px;
+    }
+  }
+
+  &-next,
+  &-prev {
+    top: 50%;
+  }
+
+  &-next {
+    right: -45px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      right: 0;
+    }
+  }
+
+  &-prev {
+    left: -45px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      left: 0;
+    }
+  }
+}

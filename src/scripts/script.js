@@ -11,7 +11,7 @@ const swiperFull = new Swiper('.fitting__full', {
 
 const swiperThumbs = new Swiper('.fitting__thumbs', {
   spaceBetween: 15,
-  slidesPerView: 3,
+  slidesPerView: 2,
   touchRatio: 0.2,
   slideToClickedSlide: true,
   loop: true,
@@ -19,9 +19,15 @@ const swiperThumbs = new Swiper('.fitting__thumbs', {
   slideVisibleClass: 'fitting__swiper-slide',
   slideActiveClass: 'fitting__swiper-slide--active',
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.fitting__thumbs-next',
+    prevEl: '.fitting__thumbs-prev',
+  },
+
   breakpoints: {
     360: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
 
     475: {

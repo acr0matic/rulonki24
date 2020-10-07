@@ -1,0 +1,13 @@
+#quiz {
+  margin-top: 80px;
+
+  @include breakpoint($breakpoint-mobile-large) {
+    margin-top: 0;
+  }
+}
+
+.quiz {
+  &__container {
+    max-width: unset !important;
+  }
+}

@@ -7,6 +7,9 @@
 @import "vendors/hamburgers";
 @import "vendors/swiper";
 
+
+@import "vendors-extended/swiper";
+
 // 2. Подключение базовых функций и переменных
 @import
   'abstracts/variables',
@@ -26,7 +29,8 @@
   'components/button',
   'components/input',
   'components/modal',
-  'components/form';
+  'components/form',
+  'components/slider';
 
 // 5. Подключение стилей разметки
 @import
@@ -36,7 +40,7 @@
   'layout/hero',
   'layout/reason',
   'layout/fitting',
-  'layout/callback',
+  'layout/quiz',
   'layout/manufacturing',
   'layout/specialist',
   'layout/footer',

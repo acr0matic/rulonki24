@@ -38,11 +38,6 @@
 
   &__description {
 
-    @include breakpoint($breakpoint-mobile-large) {
-      br {
-        display: none;
-      }
-    }
   }
 
   &__info {
