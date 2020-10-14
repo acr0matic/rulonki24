@@ -9,7 +9,7 @@
 
 .mobile-menu {
   position: fixed;
-  z-index: 4;
+  z-index: $z-index-header;
   top: 60px;
   width: 100%;
 
@@ -72,7 +72,7 @@
   @include breakpoint($breakpoint-mobile-large) {
     display: block;
   }
-  
+
   &__icon {
     width: 32px;
   }

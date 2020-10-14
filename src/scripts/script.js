@@ -39,6 +39,22 @@ const swiperThumbs = new Swiper('.fitting__thumbs', {
 swiperFull.controller.control = swiperThumbs;
 swiperThumbs.controller.control = swiperFull;
 
+const feedbackSlider = new Swiper('.feedback__slider', {
+  spaceBetween: 10,
+
+  loop: true,
+  slidesPerView: 1,
+  loopedSlides: 8,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.feedback-next',
+    prevEl: '.feedback-prev',
+  },
+});
+
+feedbackSlider.init();
+
 MicroModal.init({
   awaitCloseAnimation: true,
 });

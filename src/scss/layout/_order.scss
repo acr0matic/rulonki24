@@ -4,6 +4,7 @@
   background-position: center;
 
   padding-bottom: 35px;
+  margin-bottom: 0;
 }
 
 .order {
@@ -26,6 +27,18 @@
         margin-right: auto;
       }
     }
+
+
+    @include breakpoint($breakpoint-mobile-large) {
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 
@@ -37,6 +50,19 @@
       content: url("../img/scheme/next.png");
       margin-left: 30px;
       margin-right: 30px;
+    }
+  }
+
+  @include breakpoint($breakpoint-mobile-large) {
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &::after {
+      display: none;
+    }
+
+    br {
+      display: none;
     }
   }
 
@@ -52,6 +78,10 @@
     min-width: 260px;
 
     margin-left: 20px;
+
+    @include breakpoint($breakpoint-mobile-large) {
+      min-width: unset;
+    }
   }
 
   &__title {
